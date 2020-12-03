@@ -5,6 +5,9 @@ public class Store {
     String BookName;
     String BookQuantity;
 
+    public Store() {
+    }
+
     public String getBookId() {
         return BookId;
     }
