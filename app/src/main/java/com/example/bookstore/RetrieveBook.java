@@ -25,7 +25,7 @@ public class RetrieveBook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrieve_book);
-        textView =findViewById(R.id.Textview);
+        textView =findViewById(R.id.textView);
         btn1 = findViewById(R.id.button);
         db=FirebaseFirestore.getInstance();
     btn1.setOnClickListener(new View.OnClickListener() {
@@ -48,9 +48,9 @@ public class RetrieveBook extends AppCompatActivity {
                             for(DocumentSnapshot document : task.getResult())
                             {
                                 Store store = document.toObject(Store.class);
-                                bookdetails+="BOOK ID : "+store.getBookId()+
-                                        "\nBOOK NAME : "+store.getBookName()+
-                                        "\nBOOK Quantity :"+store.getBookQuantity()+"\n";
+                                bookdetails+="\n\nBOOK ID : \t"+store.getBookId()+
+                                        "\n\nBOOK NAME : \t"+store.getBookName()+
+                                        "\n\nBOOK Quantity : \t"+store.getBookQuantity()+"\n\n\n";
                             }
                             textView.setText(bookdetails);
                         }

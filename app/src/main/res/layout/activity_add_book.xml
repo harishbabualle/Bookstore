@@ -4,39 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddBook"
+    android:background="#433131"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="center">
+    tools:context=".AddBook">
 
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center"
+        android:text="Book Store"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/book2" />
 
     <EditText
         android:id="@+id/Bookid"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:background="#EDD2D2"
         android:ems="10"
-        android:inputType="numberDecimal"
-        />
+        android:hint="Book Identification"
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/Bookname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#EDD2D2"
         android:ems="10"
-        android:inputType="textPersonName"
-        />
+        android:hint="Book Name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/Quantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#EDD2D2"
         android:ems="10"
-        android:inputType="number"
-        />
+        android:hint="Quantity"
+        android:inputType="number" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:ems="15"
+        android:background="#EDD2D2"
+        android:text="Submit" />
+
+
+
 
 </LinearLayout>

@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="#433131"
+    android:gravity="center"
     android:orientation="vertical"
-    android:gravity="center">
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOK STORE"
+        android:textAlignment="center"
+        android:textColor="#8F8484"
+        android:textSize="26dp"
+        android:textStyle="bold|italic">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/book" />
+
     <Button
         android:id="@+id/Submit"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Register">
+        android:background="#72BA9393"
+        android:text="Add Book">
 
     </Button>
+
     <Button
         android:id="@+id/Retrieve"
         android:layout_width="250dp"
-        android:layout_marginTop="10dp"
         android:layout_height="wrap_content"
-        android:text="Retrieve"/>
+        android:layout_marginTop="10dp"
+        android:background="#72BA9393"
+        android:text="Book Details" />
+
+
 </LinearLayout>
